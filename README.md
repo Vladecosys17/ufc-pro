@@ -1,16 +1,77 @@
-# React + Vite
+# Unión Fuerza Cambio — Frontend MVP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend del sitio web de **Unión Fuerza Cambio**, una asociación de desarrollo comunitario.
+Este proyecto corresponde a la **fase MVP**, diseñado como un **embudo de conversión**
+para donadores individuales.
 
-Currently, two official plugins are available:
+El objetivo único del sitio es:
+> Que el visitante comprenda el propósito y **contacte con intención de donar**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Objetivo del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Informar de forma clara y honesta sobre el trabajo comunitario
+- Reducir fricción para el donador individual
+- Priorizar contacto directo sobre exploración de contenido
+- Validar intención real antes de escalar funcionalidades
 
-## Expanding the ESLint configuration
+Este sitio **no es institucional** ni un portal informativo tradicional.
+Está diseñado como un **embudo simple**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧭 Alcance actual (MVP)
+
+### Funcionalidades implementadas
+
+- Home con mensaje principal y CTA único
+- Flujo de contacto optimizado para móvil
+- Formulario de contacto con:
+  - Nombre
+  - Email
+  - Teléfono (opcional)
+  - Consentimiento explícito para WhatsApp
+- Integración opcional con WhatsApp mediante mensaje prellenado
+- Estructura de rutas mínima y clara
+- Estilos globales mobile-first
+- Arquitectura de componentes orientada a conversión
+
+### Rutas activas
+
+| Ruta | Propósito |
+|-----|----------|
+| `/` | Activar interés |
+| `/contact` | Capturar intención |
+
+---
+
+## 🧱 Stack tecnológico
+
+- **React 18**
+- **Vite**
+- **React Router v6**
+- JavaScript (ESM)
+- CSS plano (sin frameworks)
+
+> Se priorizó estabilidad y previsibilidad sobre versiones experimentales.
+
+---
+
+## 📁 Estructura del proyecto
+
+```txt
+src/
+├─ App.jsx
+├─ main.jsx
+├─ pages/
+│  ├─ Home.jsx
+│  └─ Contact.jsx
+├─ components/
+│  ├─ hero/
+│  ├─ cta/
+│  ├─ contact/
+│  ├─ layout/
+│  └─ ui/
+└─ styles/
+   └─ globals.css
